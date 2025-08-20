@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Simple Pricing!</h1>
+        <p class="header-decription">The most advanced customer support tools with a simple and affordable pricing. And you can always try for 30 days, free!</p>
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="card" onclick="selectCard(this)">
+                <div class="card-header">
+                <h3>BASIC</h3>
+                </div>
+
+                <div class="card-body">
+                    <p><sup>$</sup>4<sub>/month</sub></p>
+                    <hr>
+                    <ul>
+                        <li><b>10</b> Projects </li>
+                        <li><b>10</b> Pages </li>
+                        <li><b>100</b> Mb Disk Space </li>
+                    </ul>
+                    <button class="btn" onclick="alert('Success')">BUY NOW</button>
+                </div>
+            </div>
+
+            <div class="card" onclick="selectCard(this)">
+                <div class="card-header">
+                <h3>STANDARD</h3> Save 15%
+                </div>
+
+                <div class="card-body">
+                    <p><sup>$</sup>8<sub>/month</sub></p>
+                    <hr>
+                    <ul>
+                        <li><b>20</b> Projects </li>
+                        <li><b>20</b> Pages </li>
+                        <li><b>200</b> Mb Disk Space </li>
+                    </ul>
+                    <button class="btn" onclick="alert('Success')">BUY NOW</button>
+                </div>
+            </div>
+
+            <div class="card" onclick="selectCard(this)">
+                <div class="card-header">
+                <h3>ADVANCED</h3>
+                </div>
+
+                <div class="card-body">
+                    <p><sup>$</sup>12<sub>/month</sub></p>
+                    <hr>
+                    <ul>
+                        <li><b>40</b> Projects </li>
+                        <li><b>410</b> Pages </li>
+                        <li><b>500</b> Mb Disk Space </li>
+                    </ul>
+                    <button class="btn" onclick="alert('Success')">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+
+        <aside>
+            <h2>Frquently Asked Question</h2>
+            <div class="aside-container">
+                <div class="p1">
+                    <h3>How does free trial work?</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit fuga debitis ab sit incidunt ipsa, libero illo quod voluptatem culpa voluptatibus laborum perferendis ipsam similique temporibus neque assumenda accusamus sed?</p>
+                </div>
+                <div class="p2">
+                    <h3>Can I cancel any time?</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis non fugit facere rerum iste, perferendis quam, tempore pariatur recusandae obcaecati iure aliquam aspernatur voluptatum. Mollitia placeat qui tenetur soluta officia.</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <script>
+        function selectCard(card) {
+            document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
+            card.classList.add('active');
+        }
+    </script>
+</body>
+</html>
